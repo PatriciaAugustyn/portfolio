@@ -1,2 +1,2 @@
 # portfolio
-Lien de mon portfolio : https://patriciaaugustyn.github.io/portfolio/
+Voici le lien vers mon portfolio : https://patriciaaugustyn.github.io/portfolio/
