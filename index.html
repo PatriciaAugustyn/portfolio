@@ -1,65 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" href="./assets/img/logo.png" type="image/png">
-    <!--https://www.flaticon.com/search?word=butterfly-->
-    <title>P O R T F O L I O</title>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="container">
-            <input type="radio" name="slide" id="c1" checked>
-            <label for="c1" class="card">
-              <video autoplay loop muted playsinline>
-                    <source src="./assets/mp4/video1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="row">
-                    <div class="icon">1</div>
-                    <div class="description">
-                        <h4>B O N H E U R</h4>
-                        <p>Analyse du mot bonheur <a href="https://patriciaaugustyn.github.io/BONHEUR/" target="_blank" style="text-decoration: none;">🔗</a></p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <link rel="icon" href="./assets/img/logo.png" type="image/png">
+
+        <!-- =====BOX ICONS===== -->
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css'>
+
+
+        <title>P O R T F O L I O</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">P O R T F O L I O</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hello,<br>I'm<span class="home__title-color"> Patricia </span><br> NLP Student</h1>
+
+                    <a href="mailto:augustynpatricia@gmail.com" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://fr.linkedin.com/in/patricia-augustyn-012a6b292" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/PatriciaAugustyn" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="40" y="60" href="assets/img/profil.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">A B O U T</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Je m'appelle Patricia</h2>
+                        <p class="about__text">Mon portfolio est rempli de  projets passionnants qui ont été créés avec une touche de nouveauté et de créativité. Chaque projet est unique et représente un défi différent que j’ai relevé avec succès. J’ai travaillé sur une variété de projets, allant de la conception de sites web à la création de scripts, en passant par des analyses et des projets d’animation. Mon objectif est de continuer à explorer de nouvelles idées et à les transformer en projets réussis.</p>
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">S K I L L S</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Mes Compétences</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i><i class='bx bxl-css3 skills__icon'></i><i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">HTML / CSS / JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-python skills__icon' ></i>
+                                <span class="skills__name">PYTHON</span>
+                            </div>
+                            <div class="skills__bar skills__python">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">60%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-php skills__icon' ></i>
+                                <span class="skills__name">BASH / SCRIPT SHELL</span>
+                            </div>
+                            <div class="skills__bar skills__linux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">50%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">SQL / XML / TEI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/skills.jpg" alt="" class="skills__img">
                     </div>
                 </div>
-            </label>
-            <input type="radio" name="slide" id="c2" >
-            <label for="c2" class="card">
-                <div class="row">
-                    <div class="icon">2</div>
-                    <div class="description">
-                        <h4>A N A L Y S E</h4>
-                        <p>Des données d'un fichier <a href="https://patriciaaugustyn.github.io/progHN/" target="_blank" style="text-decoration: none;">🔗</a></p>
-                    </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">W O R K</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="https://patriciaaugustyn.github.io/BONHEUR/" class="work__img">
+                    <video autoplay loop muted playsinline>
+                        <source src="./assets/mp4/video1.mp4" type="video/mp4">
+                    </video>
+
+                    </a>
+                    <a href="https://patriciaaugustyn.github.io/progHN/" class="work__img">
+                    <video autoplay loop muted playsinline>
+                        <source src="./assets/mp4/video2.mp4" type="video/mp4">
+                    </video>
+                    </a>
+                    <a href="https://patriciaaugustyn.github.io/progHN/" class="work__img">
+                    <video autoplay loop muted playsinline>
+                        <source src="./assets/mp4/video3.mp4" type="video/mp4">
+                    </video>
+                    </a>
+                    <!--
+                    <a href="" class="work__img">
+                        <img src="..." alt="">
+                    </a>-->
                 </div>
-            </label>
-            <input type="radio" name="slide" id="c3" >
-            <label for="c3" class="card">
-                <div class="row">
-                    <div class="icon">3</div>
-                    <div class="description">
-                        <h4>P R O F E S S I O N N E L</h4>
-                        <p>Mon CV <a href="https://patriciaaugustyn.github.io/mon_cv/" target="_blank" style="text-decoration: none;">🔗</a></p>
-                    </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">C O N T A C T</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="S E N D" class="contact__button button">
+                    </form>
                 </div>
-            </label>
-            <input type="radio" name="slide" id="c4" >
-            <label for="c4" class="card">
-                <video autoplay loop muted playsinline>
-                    <source src="./assets/mp4/video2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="row">
-                    <div class="icon">4</div>
-                    <div class="description">
-                        <h4>........</h4>
-                        <p>En cours</p>
-                    </div>
-                </div>
-            </label>
-        </div>
-    </div>
-</body>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">PORTFOLIO DE A. PATRICIA</p>
+            <!-- On peut ajouter les social media
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>-->
+            <p class="footer__copy">&#169; Ce site a été développé par moi-même, en utilisant également des éléments fournis par Bedimcode.</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+
+    </body>
+
 </html>
